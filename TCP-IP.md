@@ -8,7 +8,7 @@ TCP/IP协议栈
 ### 1、OSI模型和TCP/IP协议模型
 图1是OSI模型和TCP/IP协议模型的对比。
 
-![](https://github.com/DesperadoH/Articles/raw/master/imgs/TCO-IP-protocol-stack/1.jpg) 
+![](https://github.com/DesperadoH/Articles/raw/master/imgs/TCP-IP-protocol-stack/1.jpg) 
 
 ### 2、TCP/IP协议模型分层
 
@@ -43,7 +43,7 @@ TCP/IP协议栈
 
 ### 3、TCP/IP协议模型对数据的封装
 
-![](https://github.com/DesperadoH/Articles/raw/master/imgs/TCO-IP-protocol-stack/2.jpg) 
+![](https://github.com/DesperadoH/Articles/raw/master/imgs/TCP-IP-protocol-stack/2.jpg) 
 
 图2 各层数据包之间的相关性
 
@@ -122,7 +122,7 @@ MAC包头占有14字节，即：
 
 ### 3、IP包头
 
-![](https://github.com/DesperadoH/Articles/raw/master/imgs/TCO-IP-protocol-stack/3.jpg) 
+![](https://github.com/DesperadoH/Articles/raw/master/imgs/TCP-IP-protocol-stack/3.jpg) 
 
 IP包头占有20个字节，即：
 
@@ -153,7 +153,7 @@ IP包头占有20个字节，即：
 
 ### 4、TCP包头
 
-![](https://github.com/DesperadoH/Articles/raw/master/imgs/TCO-IP-protocol-stack/4.jpg) 
+![](https://github.com/DesperadoH/Articles/raw/master/imgs/TCP-IP-protocol-stack/4.jpg) 
 
 TCP包头占有20个字节，即：
 
