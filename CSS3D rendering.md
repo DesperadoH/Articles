@@ -31,7 +31,6 @@ http://web.jobbole.com/85927/
 ------
 
 
-![](https://github.com/DesperadoH/Articles-Browser-and-Network/raw/master/imgs/CSS3D rendering/3.jpg)
 
 小标题起得有点大，我们知道，不同浏览器的内核（渲染引擎，Rendering Engine）是不一样的，例如现在最主流的 chrome 浏览器的内核是 Blink 内核（在Chrome（28及往后版本）、Opera（15及往后版本）和Yandex浏览器中使用），火狐是 Gecko，IE 是 Trident ，浏览器内核负责对网页语法的解释并渲染（显示）网页，不同浏览器内核的工作原理并不完全一致。
 
@@ -51,8 +50,9 @@ http://web.jobbole.com/85927/
 
 * 4. 绘制渲染树(Painting)
 
+![](https://github.com/DesperadoH/Articles-Browser-and-Network/raw/master/imgs/CSS3D rendering/3.jpg)
 
-![](https://github.com/DesperadoH/Articles-Browser-and-Network/raw/master/imgs/CSS3D rendering/4.jpg)
+
 
 
 当页面加载并解析完毕后，它在浏览器内代表了一个大家十分熟悉的结构：DOM（Document Object Model，文档对象模型）。在浏览器渲染一个页面时，它使用了许多没有暴露给开发者的中间表现形式，其中最重要的结构便是**层(layer)**。
@@ -72,12 +72,14 @@ GraphicsLayer 层是作为纹理(texture)上传给 GPU 的。
 
 说起来很难懂，直接看例子，在 chrome 中，我们是可以看到上文所述的 GraphicsLayer — 层的概念。在开发者工具中，我们进行如下选择调出 show layer borders 选项：
 
+![](https://github.com/DesperadoH/Articles-Browser-and-Network/raw/master/imgs/CSS3D rendering/4.jpg)
 
-![](https://github.com/DesperadoH/Articles-Browser-and-Network/raw/master/imgs/CSS3D rendering/5.jpg)
 
 在一个极简单的页面，我们可以看到如下所示，这个页面只有一个层。蓝色网格表示瓦片(tile)，你可以把它们当作是层的单元（并不是层），Chrome 可以将它们作为一个大层的部分上传给 GPU：
 
-![](https://github.com/DesperadoH/Articles-Browser-and-Network/raw/master/imgs/CSS3D rendering/6.png)
+![](https://github.com/DesperadoH/Articles-Browser-and-Network/raw/master/imgs/CSS3D rendering/5.jpg)
+
+
 
 ### 元素自身层的创建
 
@@ -85,8 +87,8 @@ GraphicsLayer 层是作为纹理(texture)上传给 GPU 的。
 
 注意橘黄色的边框，它画出了该视图中层的轮廓：
 
+![](https://github.com/DesperadoH/Articles-Browser-and-Network/raw/master/imgs/CSS3D rendering/6.png)
 
-![](https://github.com/DesperadoH/Articles-Browser-and-Network/raw/master/imgs/CSS3D rendering/7.png)
 
 ### 何时触发创建层 ？
 
